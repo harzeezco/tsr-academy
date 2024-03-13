@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.useTabs": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "cody.autocomplete.formatOnAccept": true,
+  "eslint.format.enable": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "cSpell.words": [
+    "scroller"
+  ],
+  "editor.fontSize": 13
+}

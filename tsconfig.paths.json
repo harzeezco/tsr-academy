@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@landing-page/*": ["./client/landing-page/*"],
+      "@landing-page": ["./client/landing-page/"],
+      "@admin/*": ["./client/admin/*"],
+      "@admin": ["./client/admin/"],
+      "@repository/*": ["./client/repository/*"],
+      "@repository": ["./client/repository"],
+      "@api/*": ["./client/api/*"],
+      "@api": ["./client/api"],
+      "@domain/*": ["./client/domain/*"],
+      "@domain": ["./client/domain"],
+      "@shared/*": ["./client/shared/*"],
+      "@shared": ["./client/shared"],
+      "@server/*": ["./server/*"],
+      "@config/*": ["./config/*"],
+      "@config": ["./config"]
+    }
+  }
+}

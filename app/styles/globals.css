@@ -1,0 +1,3 @@
+@tailwind utilities;
+@import url('../styles/theme.css');
+@import url('../styles/queries.css');
