@@ -20,9 +20,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@shared';
-import useLocation from '@shared/hooks/use-location';
 
 import CustomInput from './custom-input';
+import useLocation from '@shared/hooks/use-location';
 
 const formSchema = z
   .object({
@@ -54,6 +54,8 @@ const formSchema = z
       ),
     how: z.string().optional(),
     howType: z.enum(['linkedin', 'facebook', 'instagram', 'others']),
+    course: z.string(),
+    courseType: z.enum(['devops', 'cloud-computing',]),
   })
   .refine(
     (data) => {
@@ -66,6 +68,18 @@ const formSchema = z
     {
       message: 'Please, select an option',
       path: ['howType'],
+    },
+  ).refine(
+    (data) => {
+      if (data.courseType && data.course) {
+        return data.courseType === data.course.toLowerCase();
+      }
+
+      return true;
+    },
+    {
+      message: 'Please, select an option',
+      path: ['courseType'],
     },
   );
 
@@ -80,11 +94,13 @@ export function FormBox() {
       number: '',
       howType: undefined,
       agreement: false,
+      courseType: undefined
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const { agreement, email, fullname, howType, number } = values;
+    console.log('sign in');
+    const { agreement, courseType, email, fullname, howType, number } = values;
 
     const data = {
       full_name: fullname,
@@ -93,9 +109,10 @@ export function FormBox() {
       how: howType,
       continent: country,
       agreement,
+      course: courseType
     };
 
-    console.log(data);
+    console.log(values);
 
     if (agreement) {
       const data = { email };
@@ -240,6 +257,49 @@ export function FormBox() {
                     value='others'
                   >
                     Others
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name='courseType'
+          render={({ field }) => (
+            <FormItem className=''>
+              <Select onValueChange={field.onChange}>
+                <FormControl>
+                  <SelectTrigger className='h-12 rounded-[12px] !border-[1.5px] !border-green-100 !bg-[#17474A]'>
+                    <div className='flex items-center gap-2'>
+                      <Image
+                        alt='message'
+                        className='left-4 top-3'
+                        height={24}
+                        src='/icons/speech.svg'
+                        width={24}
+                      />
+                      <SelectValue
+                        className='self-start'
+                        placeholder='Select a Course'
+                      />
+                    </div>
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent className='rounded-[12px] !border-green-100 !bg-[#17474A] text-white'>
+                  <SelectItem
+                    className='cursor-pointer !rounded-[10px] !transition-all hover:!bg-green-500'
+                    value='devops'
+                  >
+                    Devops
+                  </SelectItem>
+                  <SelectItem
+                    className='cursor-pointer !rounded-[10px] !transition-all hover:!bg-green-500'
+                    value='cloud-computing'
+                  >
+                    Cloud Computing
                   </SelectItem>
                 </SelectContent>
               </Select>
