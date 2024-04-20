@@ -162,7 +162,7 @@ export function CourseInformation() {
   ) {
     const newBenefits = [...courseInfo.benefits];
 
-    newBenefits[index].title = event.target.value;
+    newBenefits[index]!.title = event.target.value;
     setCourseInfo({
       ...courseInfo,
       benefits: newBenefits,

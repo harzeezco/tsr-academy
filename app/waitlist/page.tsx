@@ -60,12 +60,12 @@ export default function WaitList() {
           console.log('Success:', data);
         })
         .catch((error) => {
-          toast.error(error.message);
+          toast.error(error?.message || 'An error occurred');
         });
 
       console.log('Email is valid:', email);
     } else {
-      toast.error(result.error.errors[0].message);
+      toast.error(result.error?.errors?.[0]?.message || 'Invalid email');
     }
 
     console.log(result);

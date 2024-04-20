@@ -18,7 +18,7 @@ const useTextTyped = (superpowers: string[]) => {
   useEffect(() => {
     switch (phrase) {
       case phrases.Typing: {
-        const nextTypedSuperpower = superpowers[selectedIndex].slice(
+        const nextTypedSuperpower = superpowers[selectedIndex]!.slice(
           0,
           typedSuperpower.length + 1,
         );
@@ -51,7 +51,7 @@ const useTextTyped = (superpowers: string[]) => {
 
         const nextRemainingSuperpower = superpowers[
           selectedIndex
-        ].slice(0, typedSuperpower.length - 1);
+        ]!.slice(0, typedSuperpower.length - 1);
 
         const timeout = setTimeout(() => {
           setTypedSuperpower(nextRemainingSuperpower);
