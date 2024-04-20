@@ -4,7 +4,7 @@ import { cn } from '@shared/lib/utils';
 
 const variants = {
   outer:
-    'max-w-[1220px] my-4 rounded-[2vw] xl:max-w-[1520px] 2xl:max-w-[1620px]',
+    '',
   inner: 'max-w-[1150px] md:px-6 max-md:px-4 xl:max-w-[1420px]',
 };
 

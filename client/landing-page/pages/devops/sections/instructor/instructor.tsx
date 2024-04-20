@@ -3,21 +3,18 @@ import Image from 'next/image';
 import { Container } from '@landing-page/shared';
 
 export function Instructor() {
-  const background = 'radial-gradient(#FFFEF2 30%, #FFEFC8 )';
-
   return (
     <Container
-      className='px-4 py-20 lg:px-7 '
-      style={{ backgroundImage: background }}
+      className='px-3 py-14 lg:px-7'
       variant='outer'
     >
       <h1 className='h1bold whitespace-nowrap text-center'>
         Meet Your Instructor
       </h1>
 
-      <div className='mt-10 grid grid-cols-1 items-center gap-4 max-md:gap-y-7 lg:grid-cols-[1.2fr_0.8fr]'>
+      <div className='mx-auto mt-10 grid max-w-[1000px] grid-cols-1 items-center gap-20 max-md:gap-y-7 lg:grid-cols-[1.4fr_0.6fr]'>
         <div className='max-lg:order-1'>
-          <article className='rounded-[30px] border border-[#FF9800] bg-white p-5 xl:p-7'>
+          <article className='p-5 xl:p-7'>
             <h2 className='text-[24px] text-dark-900 md:text-3xl'>
               JOHN DOE
             </h2>
@@ -26,34 +23,17 @@ export function Instructor() {
             </p>
 
             <blockquote className='mt-4 md:text-lg'>
-              Lorem ipsum dolor sit amet consectetur. Id enim id quam
-              adipiscing suscipit sem odio enim. Metus gravida nulla
-              eu ac molestie. Tristique gravida risus semper egestas
-              ut vulputate libero. Leo odio eget tristique diam.
-              Nullam euismod fringilla turpis pretium etiam nisl diam.
-              Cursus auctor sagittis libero quisque. Fermentum sit
-              commodo aliquam leo amet mollis. Sagittis nec sed mattis
-              a sed amet ac. Eu a lectus velit tortor etiam dolor
-              fringilla. Ut lacinia posuere at neque et donec urna
-              eget nulla. Amet rhoncus egestas erat erat purus
-              eleifend.Amet rhoncus egestas erat erat purus eleifend.
+              Lorem ipsum dolor sit amet consectetur. Id enim id quam adipiscing suscipit sem odio enim. Metus gravida nulla eu ac molestie. Tristique gravida risus semper egestas ut vulputate libero. Leo odio eget tristique diam. Nullam euismod fringilla turpis pretium etiam nisl diam. Cursus auctor sagittis libero quisque. Fermentum sit commodo aliquam leo amet mollis. elementum.
             </blockquote>
           </article>
 
-          <div
-            className='mt-4 h-[100px] w-full rounded-[30px] max-lg:order-1 md:h-[110px]'
-            style={{
-              backgroundImage:
-                'linear-gradient( to right, #FFAF38, #FF9800)',
-            }}
-          />
         </div>
         <div className='flex justify-center'>
           <Image
             alt='instructor'
-            height={500}
+            height={330}
             src='/images/instructor.png'
-            width={500}
+            width={312}
           />
         </div>
       </div>

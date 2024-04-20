@@ -22,7 +22,7 @@ type CurriculumProps = {
 
 const courses: CurriculumProps[] = [
   {
-    name: 'Introduction, Introduction, Introduction',
+    name: 'Introduction to cloud computing',
     id: 1,
     isOpen: false,
     module: [
@@ -39,7 +39,7 @@ const courses: CurriculumProps[] = [
     ],
   },
   {
-    name: 'Introduction to DevOps.',
+    name: 'Linux Operating systems and handling.',
     id: 2,
     isOpen: false,
     module: [
@@ -135,7 +135,7 @@ export function Curriculum() {
         database management, and more
       </p>
 
-      <div className='mt-10 rounded-[24px] bg-[#E7F9FB]'>
+      <div className='mx-auto mt-10 max-w-[1000px] rounded-[24px] bg-[#E7F9FB]'>
         <ul>
           {curriculum.map((lecture) => (
             <li className='mb-3 rounded-[10px]'>

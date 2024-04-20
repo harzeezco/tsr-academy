@@ -5,7 +5,7 @@ export function FAQ() {
   return (
     <Container
       as='section'
-      className='bg-[#EDF0F7] py-14'
+      className='py-14'
       variant='outer'
     >
       <Container>
@@ -16,7 +16,7 @@ export function FAQ() {
         <div className='mt-8' id='faq'>
           <FAQAccordion />
 
-          <div className='mx-auto mt-5 max-w-4xl rounded-[20px] bg-blue-200 py-3 text-center'>
+          <div className='mx-auto mt-5 max-w-4xl max-sm:px-3 rounded-[20px] bg-blue-200 py-3 text-center'>
             <h3 className='mb-2 text-2xl text-dark-900'>
               Still have questions?
             </h3>

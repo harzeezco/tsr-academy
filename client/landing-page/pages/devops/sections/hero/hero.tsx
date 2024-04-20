@@ -13,7 +13,7 @@ export function Hero() {
 
   return (
     <Container
-      className='relative pb-[7rem] max-sm:pb-[5rem]'
+      className='relative'
       style={{
         background:
           'url(/images/under-image.png), linear-gradient(to right, #024ba5, #105dbd)',

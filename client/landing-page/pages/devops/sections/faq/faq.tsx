@@ -34,50 +34,52 @@ export function FAQ() {
       className='px-4 py-14 lg:px-10'
       style={{
         background:
-          'url(/images/faq-under-img.png), radial-gradient(circle, #F2F3FF 100%, #EDEDF7)',
+          'url(/images/faq-under-img.png), #E9F3FF'
       }}
       variant='outer'
     >
-      <h1 className='h1bold mb-2 mt-4 max-w-lg'>
-        Frequently{' '}
-        <span className='text-blue-700'>Asked Questions</span>
-      </h1>
-      <p className='max-w-xl text-dark-900 md:text-lg'>
-        Can’t find the answer looking for? Please chat to our friendly
-        team{' '}
-        <Link className='text-blue-700 underline' href='/help'>
-          help@tsrlearning.com
-        </Link>
-      </p>
+      <div className='mx-auto max-w-[1000px]'>
+        <h1 className='h1bold mb-2 mt-4'>
+          Frequently{' '}
+          <span className='text-blue-700'>Asked Questions</span>
+        </h1>
+        <p className='max-w-xl text-dark-900 md:text-lg'>
+          Can’t find the answer looking for? Please chat to our friendly
+          team{' '}
+          <Link className='text-blue-700 underline' href='/help'>
+            help@tsrlearning.com
+          </Link>
+        </p>
 
-      <div className='mt-12 flex items-center justify-between gap-5 max-lg:flex-col'>
-        <div className='flex flex-[1.2] flex-col items-center gap-5'>
-          {FAQs.map((faq) => (
-            <div className='grid max-w-2xl gap-2 rounded-3xl bg-[#EBF4FF] p-4 md:grid-cols-[70px_1fr]'>
-              <Image
-                alt='question mark'
-                height={60}
-                src='/icons/ques.svg'
-                width={60}
-              />
+        <div className='mt-12 flex items-center justify-between gap-5 max-lg:flex-col'>
+          <div className='flex flex-[1.1] flex-col items-center gap-5'>
+            {FAQs.map((faq) => (
+              <div className='grid max-w-2xl gap-3 rounded-3xl bg-[#E7ECFB] p-4 md:grid-cols-[50px_1fr]'>
+                <Image
+                  alt='question mark'
+                  height={50}
+                  src='/icons/ques.svg'
+                  width={50}
+                />
 
-              <div>
-                <h3 className='mb-2 text-xl font-semibold text-[#4E4E4E] sm:text-xl'>
-                  {faq.question}
-                </h3>
-                <p>{faq.ans}</p>
+                <div>
+                  <h3 className='mb-2 font-semibold text-[#4E4E4E]'>
+                    {faq.question}
+                  </h3>
+                  <p className='text-sm'>{faq.ans}</p>
+                </div>
               </div>
-            </div>
           ))}
-        </div>
+          </div>
 
-        <div className='flex-[0.8]'>
-          <Image
-            alt='faq'
-            height={700}
-            src='/images/faq-student.png'
-            width={400}
-          />
+          <div className='flex-[0.9]'>
+            <Image
+              alt='faq'
+              height={800}
+              src='/images/devops-faq.png'
+              width={400}
+            />
+          </div>
         </div>
       </div>
     </Container>

@@ -10,19 +10,19 @@ import {
 
 const TestimonialData = [
   {
-    src: 'testimonial-student.png',
+    src: 'tunji.png',
     description:
       'My name is Juliet Ebili. TSR Learning has shaped and  enable me to be on a fast track.One good thing about the classes is that you have mentor who are ready to help you, draw from their wealth of and their payment plan is topnotch.',
     person: 'Juliet Ebili - Co Founder of Ocean LLC',
   },
   {
-    src: 'testimonial-student.png',
+    src: 'tunji.png',
     description:
       'My name is Juliet Ebili. TSR Learning has shaped and  enable me to be on a fast track.One good thing about the classes is that you have mentor who are ready to help you, draw from their wealth of and their payment plan is topnotch.',
     person: 'Juliet Ebili - Co Founder of Ocean LLC',
   },
   {
-    src: 'testimonial-student.png',
+    src: 'tunji.png',
     description:
       'My name is Juliet Ebili. TSR Learning has shaped and  enable me to be on a fast track.One good thing about the classes is that you have mentor who are ready to help you, draw from their wealth of and their payment plan is topnotch.',
     person: 'Juliet Ebili - Co Founder of Ocean LLC',
@@ -37,8 +37,8 @@ export function TestimonialCarousel() {
           {TestimonialData.map(
             ({ description, person, src }, index) => (
               <CarouselItem key={index} className='relative z-[9999]'>
-                <article className='relative mt-7 grid place-items-center gap-10 md:gap-20 lg:mt-7 lg:grid-cols-[250px_1fr] lg:px-7'>
-                  <div className='relative max-sm:h-[168px] max-sm:w-[128px]'>
+                <article className='relative mx-auto mt-7 gap-10 space-y-5 md:gap-20 lg:mt-7 lg:grid lg:w-[1000px] lg:grid-cols-[250px_1fr] lg:place-items-center lg:px-7'>
+                  <div className='relative mx-auto max-sm:h-[168px] max-sm:w-[128px] '>
                     <Image
                       alt='A student looking Happy'
                       className='rounded-[149px] max-sm:h-[168px] max-sm:w-[128px]'
@@ -49,14 +49,14 @@ export function TestimonialCarousel() {
 
                     <Image
                       alt='Quote'
-                      className='absolute -right-1 top-4 max-sm:top-1 max-sm:h-[40px] max-sm:w-[30px] md:-right-2'
-                      height={90}
+                      className='absolute -right-1 top-4 max-sm:top-1 max-sm:h-[40px] max-sm:w-[30px] md:-right-4'
+                      height={60}
                       src='/images/quote.png'
-                      width={80}
+                      width={60}
                     />
                   </div>
                   <div>
-                    <blockquote className='text-xl leading-7 md:text-2xl md:leading-[33px]'>
+                    <blockquote className='mx-auto max-w-xl leading-7 md:text-lg md:leading-[25px]'>
                       {description}
                     </blockquote>
 
@@ -71,8 +71,8 @@ export function TestimonialCarousel() {
                     </p>
 
                     <div className='mt-10 items-center justify-end gap-4 md:mt-14 md:flex'>
-                      <CarouselPrevious className='!size-12 from-[#00AABB] to-[#08808C] transition-all hover:border-none hover:bg-gradient-to-r hover:text-white disabled:bg-transparent max-sm:absolute max-sm:!left-[0px] max-sm:!-translate-y-48' />
-                      <CarouselNext className='!size-12 from-[#00AABB] to-[#08808C] transition-all hover:border-none hover:bg-gradient-to-r hover:text-white disabled:!bg-transparent max-sm:absolute max-sm:!right-[0px] max-sm:!-translate-y-48' />
+                      <CarouselPrevious className='!size-12 from-[#00AABB] to-[#08808C] transition-all hover:border-none hover:bg-gradient-to-r hover:text-white disabled:bg-transparent max-sm:absolute max-sm:!left-[0px] max-sm:!-translate-y-36' />
+                      <CarouselNext className='!size-12 from-[#00AABB] to-[#08808C] transition-all hover:border-none hover:bg-gradient-to-r hover:text-white disabled:!bg-transparent max-sm:absolute max-sm:!right-[0px] max-sm:!-translate-y-36' />
                     </div>
                   </div>
                 </article>

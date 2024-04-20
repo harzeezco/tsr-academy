@@ -30,7 +30,7 @@ export function HeroImageWrapper() {
       <div className='relative'>
         <Image
           alt='A student smiling'
-          className='w-full max-lg:max-w-[550px] lg:h-[595px] lg:rounded-r-[2vw] xl:h-[645px] 2xl:!h-[768px] 2xl:!w-[620px]'
+          className='w-full max-lg:max-w-[550px] lg:h-[595px] xl:h-[645px] 2xl:!h-[768px] 2xl:!w-[620px]'
           height={500}
           quality={100}
           src='/images/hero-student.png'

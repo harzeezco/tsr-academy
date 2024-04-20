@@ -6,7 +6,6 @@ export function StudentWorkplace() {
   return (
     <Container
       className='pt-10'
-      style={{ background: '#F0F2FC' }}
       variant='outer'
     >
       <h1 className='h1bold mx-auto text-center text-dark-900'>

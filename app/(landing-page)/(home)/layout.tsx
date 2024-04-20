@@ -5,7 +5,7 @@ import { Container } from '@landing-page/shared';
 
 function Layout({ children }: { children: ReactNode }) {
   return (
-    <main className='px-4'>
+    <main>
       <Container
         className='relative bg-blue-100 !px-0 2xl:pb-[4.3rem]'
         variant='outer'

@@ -15,7 +15,7 @@ import {
 
 function CloudComputing() {
   return (
-    <main className='px-4 max-lg:px-3'>
+    <main>
       <Hero />
       <StudentWorkplace />
       <BootCamp />

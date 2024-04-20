@@ -6,13 +6,12 @@ export function GraduateWorkplace() {
   return (
     <Container
       as='section'
-      className='bg-purple-100 pt-14 text-center'
+      className='pt-14 text-center'
       variant='outer'
     >
       <Container>
         <h1 className='star h1-bold70 relative text-dark-900'>
-          Where Our <br />
-          <span className='text-blue-700'>Graduates</span> Work.
+          Where Our <span className='text-blue-700'>Graduates</span> Work.
         </h1>
 
         <p className='mx-auto mt-3 max-w-[700px] md:text-lg'>

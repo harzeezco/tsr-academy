@@ -19,7 +19,7 @@ export function RoadMap() {
       }}
       variant='outer'
     >
-      <h1 className='h1bold mx-auto max-w-3xl text-center '>
+      <h1 className='h1bold mx-auto max-w-3xl text-center'>
         Embark on Your Cloud Engineering{' '}
         <span className='text-[#00828F]'>Success Story</span>
       </h1>
@@ -109,7 +109,7 @@ export function RoadMap() {
         </div>
 
         <div className='relative'>
-          <h1 className='text-xl font-medium text-dark-900 sm:text-3xl lg:text-4xl'>
+          <h1 className='text-xl font-medium text-dark-900 sm:text-3xl'>
             Enrolment
           </h1>
           <p className='max-w-xs max-sm:max-w-[200px] max-sm:text-sm md:mt-2'>
@@ -128,7 +128,7 @@ export function RoadMap() {
 
       <div className='!ml-20 mt-10 grid-cols-[1fr_auto] items-center justify-center max-sm:grid sm:mt-24 md:flex md:gap-7'>
         <div className='relative'>
-          <h1 className='text-nowrap text-xl font-medium text-dark-900 sm:text-3xl lg:text-4xl'>
+          <h1 className='text-nowrap text-xl font-medium text-dark-900 sm:text-3xl'>
             Engaging CourseWork
           </h1>
 
@@ -191,7 +191,7 @@ export function RoadMap() {
         </div>
 
         <div className='relative'>
-          <h1 className='text-xl font-medium text-dark-900 sm:text-3xl lg:text-4xl'>
+          <h1 className='text-xl font-medium text-dark-900 sm:text-3xl'>
             Hands-On <br className='sm:hidden' /> Projects
           </h1>
           <ul className='mt-2 max-w-[400px] sm:mt-4'>
@@ -216,7 +216,7 @@ export function RoadMap() {
 
       <div className='mt-20 flex grid-cols-[1fr_auto] items-center justify-center gap-2 px-2 max-sm:grid md:!ml-20 md:mt-24 md:flex md:gap-7'>
         <div className='relative max-sm:ml-10'>
-          <h1 className='text-xl font-medium text-dark-900 max-sm:ml-7 sm:text-3xl lg:text-4xl'>
+          <h1 className='text-xl font-medium text-dark-900 max-sm:ml-7 sm:text-3xl'>
             Continuous <br className='md:hidden' /> Assessment
           </h1>
 
@@ -279,7 +279,7 @@ export function RoadMap() {
         </div>
 
         <div className='relative'>
-          <h1 className='text-xl font-medium text-dark-900 max-sm:ml-7 sm:text-3xl lg:text-4xl'>
+          <h1 className='text-xl font-medium text-dark-900 max-sm:ml-7 sm:text-3xl'>
             Final Evaluation
           </h1>
           <ul className='max-w-[400px] md:mt-4'>
@@ -304,7 +304,7 @@ export function RoadMap() {
       </div>
       <div className='mt-16 flex items-center justify-center gap-7 max-sm:px-6 md:!ml-20 lg:mt-24'>
         <div className='relative'>
-          <h1 className='text-xl font-medium text-dark-900 max-sm:ml-7 sm:text-3xl lg:text-4xl'>
+          <h1 className='text-xl font-medium text-dark-900 max-sm:ml-7 sm:text-3xl'>
             Earn Certification
           </h1>
 
@@ -351,9 +351,9 @@ export function RoadMap() {
         <Image
           alt=''
           className='mt-20 px-4'
-          height={613}
+          height={413}
           src='/images/certificate.png'
-          width={850}
+          width={650}
         />
       </div>
     </Container>

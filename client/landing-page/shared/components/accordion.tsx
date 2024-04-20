@@ -49,7 +49,7 @@ export function FAQAccordion() {
     >
       {FAQDetails.map(({ desc, id, title }) => (
         <AccordionItem
-          className='border-collapse rounded-[10px] border-[#c6d3f0] bg-white'
+          className='border-collapse rounded-[10px] !border !border-[#ECEFF3] bg-white'
           value={`item-${id}`}
         >
           <AccordionTrigger
@@ -58,7 +58,7 @@ export function FAQAccordion() {
           >
             {title}
           </AccordionTrigger>
-          <AccordionContent className='max-w-2xl pl-16'>
+          <AccordionContent className='max-w-3xl pl-16'>
             {desc}
           </AccordionContent>
         </AccordionItem>

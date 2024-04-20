@@ -8,10 +8,6 @@ export function About() {
     <Container
       as='section'
       className='py-14'
-      style={{
-        background:
-          'radial-gradient(circle, #FFFBF2 0%, #FFFAF3 100%)',
-      }}
       variant='outer'
     >
       <Container className='grid place-items-center'>

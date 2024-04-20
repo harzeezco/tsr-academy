@@ -36,14 +36,15 @@ export function BootCamp() {
   return (
     <Container
       as='section'
-      className='px-4 py-14 lg:px-7'
+      className='px-4 py-14 lg:px-7 mt-8'
       style={{
         background:
           'radial-gradient(circle, #F2FEFF 0%, #F2FEFF 100%)',
       }}
       variant='outer'
     >
-      <h1 className='h1bold max-w-xl'>
+      <div className='mx-auto max-w-[1000px]'>
+        <h1 className='h1bold max-w-xl'>
         Cloud Computing BootCamp Overview
       </h1>
 
@@ -130,6 +131,7 @@ export function BootCamp() {
 
           <span>4.7</span>
         </div>
+      </div>
       </div>
     </Container>
   );

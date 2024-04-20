@@ -63,7 +63,7 @@ export function NewsLetter() {
 
       console.log('Email is valid:', email);
     } else {
-      toast.error(result.error.errors[0].message);
+      toast.error(result.error.errors[0]!.message);
     }
 
     console.log(result);
@@ -71,7 +71,7 @@ export function NewsLetter() {
 
   return (
     <Container
-      className='CTA cohort-grid relative rounded-[2vw] py-20 text-white'
+      className='CTA cohort-grid relative py-14 text-white'
       style={{}}
       variant='outer'
     >

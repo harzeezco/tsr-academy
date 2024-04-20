@@ -30,12 +30,13 @@ export function HighLight() {
       className='px-4 py-14 lg:px-7'
       variant='outer'
     >
-      <h1 className='h1bold max-w-2xl'>
+      <div className='max-w-[1000px] mx-auto'>
+        <h1 className='h1bold text-center'>
         Mastering the Cloud:{' '}
         <span className='text-green-700'>A Strategic Edge</span>
       </h1>
 
-      <p className='mt-2 max-w-[650px] md:text-lg'>
+      <p className='mt-2 max-w-[700px] md:text-lg mx-auto text-center text-balance'>
         Elevate your tech abilities with TSR Learning&apos;s Cloud
         Computing Bootcamp, crafted to refine your capabilities in
         creating robust, scalable, and efficient applications using
@@ -94,6 +95,7 @@ export function HighLight() {
 
           <span>4.7</span>
         </div>
+      </div>
       </div>
     </Container>
   );

@@ -54,14 +54,11 @@ export function Community() {
   const container = React.useRef<HTMLDivElement>(null);
 
   const isInView = useInView(container, { once: true });
-  const background =
-    'radial-gradient(circle, #EDF0F7 0%, #F2F3FF 100%)';
 
   return (
     <Container
       as='section'
-      className='py-20'
-      style={{ background }}
+      className='pb-7 pt-14'
       variant='outer'
     >
       <Container>
@@ -94,7 +91,7 @@ export function Community() {
                   variants={containerVariants}
                 >
                   <motion.div
-                    className='absolute left-3 top-72 z-[9999] object-cover md:top-20'
+                    className='absolute left-3 top-52 z-[9999] object-cover md:top-20'
                     variants={childVariants}
                   >
                     <div className='relative'>
@@ -169,7 +166,7 @@ export function Community() {
                   </motion.div>
 
                   <motion.div
-                    className='absolute right-0 top-64 z-[9999] object-cover md:right-14 md:top-32'
+                    className='absolute right-3 top-64 z-[9999] object-cover md:right-14 md:top-32'
                     variants={childVariants}
                   >
                     <Image
@@ -199,7 +196,7 @@ export function Community() {
               </motion.div>
 
               <motion.div
-                className='absolute -bottom-16 left-[10%] z-[9999] md:bottom-0'
+                className='absolute -bottom-5 left-[10%] z-[9999] md:bottom-0'
                 variants={childVariants}
               >
                 <div className='relative'>
@@ -233,7 +230,7 @@ export function Community() {
               </motion.div>
 
               <motion.div
-                className='absolute z-[9999] max-sm:left-[5%] max-sm:top-[30%] md:bottom-[15%] md:right-[10%] lg:right-[20%]'
+                className='absolute z-[9999] max-sm:left-[5%] max-sm:top-[10%] md:bottom-[15%] md:right-[15%] lg:right-[20%]'
                 variants={childVariants}
               >
                 <div className='relative'>

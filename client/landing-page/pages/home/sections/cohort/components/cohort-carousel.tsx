@@ -53,7 +53,7 @@ export function CohortCarousel() {
             ) => (
               <CarouselItem
                 key={index}
-                className='grid place-items-center rounded-[2vw]'
+                className='grid place-items-center'
                 style={{
                   background: `url(/images/${backgroundImage}), ${gradient}`,
                   paddingBottom,

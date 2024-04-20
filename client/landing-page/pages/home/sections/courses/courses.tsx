@@ -39,14 +39,10 @@ export const courseData: CourseDataProp[] = [
 ];
 
 export function Courses() {
-  const background =
-    'radial-gradient(circle, #F2FDFF 0%, #F2FEFF 100%)';
-
   return (
     <Container
       as='section'
       className='py-14'
-      style={{ background }}
       variant='outer'
     >
       <Container className='relative'>

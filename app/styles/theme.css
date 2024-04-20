@@ -8,11 +8,11 @@
   }
 
   .h1-bold70 {
-    @apply text-3xl md:text-5xl max-md:!leading-10 mx-auto lg:text-[60px] lg:leading-[70px] xl:text-[80px] xl:leading-[85px]
+    @apply text-3xl md:text-5xl max-md:!leading-10 mx-auto lg:text-[55px] lg:leading-[60px] xl:text-[80px] xl:leading-[85px]
   }
 
   .h1bold {
-    @apply relative sm:text-4xl text-3xl text-green-900 lg:text-5xl lg:leading-[60px];
+    @apply relative sm:text-4xl text-3xl text-green-900 lg:text-5xl lg:leading-[55px];
   }
 
   .h3-20 {
@@ -94,7 +94,7 @@
   content: '';
   position: absolute;
   background: url('/images/star.png');
-  left: 20%;
+  left: 5%;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100px;

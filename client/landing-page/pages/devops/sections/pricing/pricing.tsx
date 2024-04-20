@@ -64,7 +64,7 @@ export function Pricing() {
         or contact us for more details about our custom plans.
       </p>
 
-      <ul className='mt-16 flex items-center justify-center gap-10 max-lg:flex-col'>
+      <ul className='mt-10 flex items-center justify-center gap-10 max-lg:flex-col'>
         {pricingList.map((item) => (
           <li
             key={item.plan}

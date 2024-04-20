@@ -32,50 +32,52 @@ export function FAQ() {
 
   return (
     <Container
-      className='px-4 py-16 lg:px-10'
+      className='px-4 py-14 lg:px-10'
       style={{ background }}
       variant='outer'
     >
-      <h1 className='mb-2 mt-4 max-w-lg text-4xl text-dark-900 md:text-6xl'>
-        Frequently{' '}
-        <span className='text-[#00828F]'>Asked Questions</span>
-      </h1>
-      <p className='max-w-xl text-dark-900 md:text-lg'>
-        Can’t find the answer looking for? Please chat to our friendly
-        team{' '}
-        <Link className='text-[#00828F] underline' href='/help'>
-          help@tsrlearning.com
-        </Link>
-      </p>
+      <div className='mx-auto max-w-[1000px]'>
+        <h1 className='h1bold mb-2 mt-4 text-dark-900'>
+          Frequently{' '}
+          <span className='text-[#00828F]'>Asked Questions</span>
+        </h1>
+        <p className='max-w-xl text-dark-900 md:text-lg'>
+          Can’t find the answer looking for? Please chat to our friendly
+          team{' '}
+          <Link className='text-[#00828F] underline' href='/help'>
+            help@tsrlearning.com
+          </Link>
+        </p>
 
-      <div className='mt-12 flex items-center justify-between gap-5 max-lg:flex-col'>
-        <ul className='flex flex-[1.2] flex-col gap-5'>
-          {FAQs.map((faq) => (
-            <li className='grid max-w-2xl gap-2 rounded-3xl bg-[#E7F9FB] p-4 md:grid-cols-[70px_1fr]'>
-              <Image
-                alt='faq'
-                height={60}
-                src='/icons/faq.svg'
-                width={60}
-              />
+        <div className='mt-12 flex items-center justify-between gap-5 max-lg:flex-col'>
+          <ul className='flex flex-[1.2] flex-col gap-5'>
+            {FAQs.map((faq) => (
+              <li className='grid max-w-2xl gap-3 rounded-3xl bg-[#E7F9FB] p-4 md:grid-cols-[50px_1fr]'>
+                <Image
+                  alt='faq'
+                  height={50}
+                  src='/icons/faq.svg'
+                  width={50}
+                />
 
-              <div>
-                <h3 className='mb-2 text-xl font-semibold text-[#4E4E4E] sm:text-xl'>
-                  {faq.question}
-                </h3>
-                <p>{faq.ans}</p>
-              </div>
-            </li>
+                <div>
+                  <h3 className='mb-2 font-semibold text-[#4E4E4E]'>
+                    {faq.question}
+                  </h3>
+                  <p className='text-sm'>{faq.ans}</p>
+                </div>
+              </li>
           ))}
-        </ul>
+          </ul>
 
-        <div className='flex-[0.8]'>
-          <Image
-            alt='faq'
-            height={700}
-            src='/images/faq-student.png'
-            width={400}
-          />
+          <div className='flex-[0.8]'>
+            <Image
+              alt='faq'
+              height={800}
+              src='/images/cloud-faq.png'
+              width={400}
+            />
+          </div>
         </div>
       </div>
     </Container>

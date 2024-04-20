@@ -6,11 +6,7 @@ export function Testimonials() {
   return (
     <Container
       as='section'
-      className='testimonial-grid relative py-14'
-      style={{
-        background:
-          'radial-gradient(circle, #F2FDFF 0%, #F2FEFF 100%)',
-      }}
+      className='relative pt-14 lg:pb-10'
       variant='outer'
     >
       <Container>

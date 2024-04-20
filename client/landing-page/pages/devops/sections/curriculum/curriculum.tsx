@@ -22,7 +22,7 @@ type CurriculumProps = {
 
 const courses: CurriculumProps[] = [
   {
-    name: 'Introduction, Introduction, Introduction',
+    name: 'Introduction to DevOps.',
     id: 1,
     isOpen: false,
     module: [
@@ -39,19 +39,19 @@ const courses: CurriculumProps[] = [
     ],
   },
   {
-    name: 'Introduction to DevOps.',
+    name: 'Linux Operating systems and handling..',
     id: 2,
     isOpen: false,
     module: [
       {
-        title: 'Getting started with Figma training',
+        title: 'Linux scripting and task automation.',
         minutes: '02:53',
         type: 'file',
       },
     ],
   },
   {
-    name: 'Linux Operating systems and handling.',
+    name: 'Linux scripting and task automation.',
     id: 3,
     isOpen: false,
     module: [
@@ -63,7 +63,7 @@ const courses: CurriculumProps[] = [
     ],
   },
   {
-    name: 'Linux scripting and task automation.',
+    name: 'Entry level to Advance Python scripting for DevOps automation tasks',
     id: 4,
     isOpen: false,
     module: [
@@ -75,8 +75,44 @@ const courses: CurriculumProps[] = [
     ],
   },
   {
-    name: 'Linux scripting and task automation.',
+    name: 'Integrate a Source Control Management tool into DevOps',
     id: 5,
+    isOpen: false,
+    module: [
+      {
+        title: 'Getting started with Figma training',
+        minutes: '02:53',
+        type: 'file',
+      },
+    ],
+  },
+    {
+    name: 'Learn how to automate the entire infrastructure with a cloud-agnostic infrastructure as a code tool.',
+    id: 6,
+    isOpen: false,
+    module: [
+      {
+        title: 'Getting started with Figma training',
+        minutes: '02:53',
+        type: 'file',
+      },
+    ],
+  },
+    {
+    name: 'Install relevant software packages with a configuration management tool.',
+    id: 7,
+    isOpen: false,
+    module: [
+      {
+        title: 'Getting started with Figma training',
+        minutes: '02:53',
+        type: 'file',
+      },
+    ],
+  },
+      {
+    name: 'Build applications with containerisation tools',
+    id: 8,
     isOpen: false,
     module: [
       {
@@ -88,7 +124,7 @@ const courses: CurriculumProps[] = [
   },
   {
     name: 'And many more',
-    id: 6,
+    id: 9,
     isOpen: false,
     module: [
       {
@@ -135,7 +171,7 @@ export function Curriculum() {
         database management, and more
       </p>
 
-      <div className='mt-10 rounded-[24px] bg-[#E7F9FB]'>
+      <div className='mx-auto mt-10 max-w-[1000px] rounded-[24px] bg-[#E7F9FB]'>
         <ul>
           {curriculum.map((lecture) => (
             <li className='mb-3 rounded-[10px]'>

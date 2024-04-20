@@ -173,7 +173,7 @@ export function Footer() {
       )}
       <Container className='relative z-40'>
         <div
-          className='footer-grid flex flex-col-reverse items-center justify-between gap-x-20 gap-y-10 rounded-[20px] lg:flex-row lg:p-20'
+          className='footer-grid mx-auto flex max-w-[1000px] flex-col-reverse items-center justify-between gap-10 rounded-[20px] lg:flex-row lg:p-7'
           style={{
             background: 'radial-gradient(#00585E 10%, #1A3739)',
           }}
@@ -182,7 +182,7 @@ export function Footer() {
             {isInView && (
               <motion.div
                 animate='visible'
-                className='relative z-40 flex flex-col gap-4'
+                className='relative z-40 flex flex-col gap-4 max-sm:px-3'
                 exit='exit'
                 initial='hidden'
                 variants={containerVariants}
@@ -229,7 +229,7 @@ export function Footer() {
           </div>
 
           <div className='relative !z-50 flex-[1.5] rounded-[20px] bg-green-850 text-white lg:p-7'>
-            <h1 className='mb-2 text-[24px] font-medium md:text-[35px] md:leading-[45px]'>
+            <h1 className='mb-2 text-[24px] font-medium md:text-3xl'>
               Ready to Start Your Courses and Grow Your Career?
             </h1>
             <p>
